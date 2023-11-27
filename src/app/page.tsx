@@ -1,3 +1,4 @@
+'use client';
 import HeaderNav from '@/components/header-nav/HeaderNav';
 import HeroSection from '@/components/hero-section/HeroSection';
 

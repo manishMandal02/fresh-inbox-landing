@@ -22,7 +22,7 @@ const HeaderNav = () => {
       <a
         href='https://chromewebstore.google.com/'
         target='_blank'
-        className='flex items-center gap-x-1 text-slate-50 from-emerald-500 to-teal-500 bg-gradient-to-br rounded-lg px-3 py-1'
+        className='flex items-center gap-x-1 text-slate-100 from-emerald-500 to-teal-500 bg-gradient-to-br rounded-md text-sm px-3.5 py-1.5 font-medium'
       >
         <FaChrome />
         Chrome Web Store
