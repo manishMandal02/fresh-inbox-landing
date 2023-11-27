@@ -3,7 +3,7 @@ import { FaChrome } from 'react-icons/fa';
 
 const HeaderNav = () => {
   return (
-    <div className='px-32 py-6 flex justify-between items-center'>
+    <div className='px-32 py-6 flex justify-between items-center '>
       {/* logo */}
       <div className='flex items-center'>
         <Image src={'/logo-128.png'} alt='logo' width={32} height={32} />
