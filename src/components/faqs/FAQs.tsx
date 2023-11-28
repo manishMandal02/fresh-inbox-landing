@@ -10,7 +10,7 @@ import {
 const FAQs = () => {
   return (
     <div>
-      <Accordion>
+      <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>What harsh truths do you prefer to ignore?</AccordionItemButton>

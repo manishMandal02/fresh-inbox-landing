@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaChrome, FaPlay } from 'react-icons/fa';
-import ModalVideoPlayer from '../elements/video-player/ModalVideoPlayer';
+import ModalVideoPlayer from './video-player/ModalVideoPlayer';
 
 const HeroSection = () => {
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
   return (
-    <div className='mt-6 px-20 py-20 flex items-center justify-between '>
+    <div className='px-20 py-20 flex items-center justify-between '>
       {/* title */}
       <div className='-mt-10'>
         <p

@@ -3,12 +3,12 @@ import { FaChrome } from 'react-icons/fa';
 
 const HeaderNav = () => {
   return (
-    <div className='px-32 py-6 flex justify-between items-center '>
+    <div className='px-32 py-6 flex justify-between items-center border-b border-slate-200/75 sticky top-0 bg-slate-50 z-[60]'>
       {/* logo */}
-      <div className='flex items-center'>
+      <a href='/' className='flex items-center'>
         <Image src={'/logo-128.png'} alt='logo' width={32} height={32} />
         <span className='text-slate-700 font-semibold ml-1 text-lg'>Fresh Inbox</span>
-      </div>
+      </a>
 
       {/* menu */}
       <ul className='flex gap-x-6'>

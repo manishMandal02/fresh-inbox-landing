@@ -1,1 +1,3 @@
-export * from "./FAQs";
+import FAQs from './FAQs';
+
+export default FAQs;

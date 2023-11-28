@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import type { ReactNode } from 'react';
+import HeaderNav from '@/components/header-nav';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -10,7 +12,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang='en'>
-      <body className={''}>{children}</body>
+      <body className='overflow-x-hidden overflow-y-auto relative'>
+        <HeaderNav />
+        <div className='bg-slate-100/70'>{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
