@@ -1,1 +1,3 @@
-export * from './HeaderNav';
+import HeaderNav from './HeaderNav';
+
+export default HeaderNav;

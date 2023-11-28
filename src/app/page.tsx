@@ -1,8 +1,9 @@
 'use client';
+import FAQs from '@/components/faqs/FAQs';
 import Features from '@/components/features/Features';
-import HeaderNav from '@/components/header-nav/HeaderNav';
+import HeaderNav from '@/components/header-nav';
 import HeroSection from '@/components/hero-section/HeroSection';
-import Image from 'next/image';
+import Testimonials from '@/components/testimonials/Testimonials';
 
 export default function Page() {
   return (
@@ -24,6 +25,8 @@ export default function Page() {
       <HeaderNav />
       <HeroSection />
       <Features />
+      <Testimonials />
+      <FAQs />
     </main>
   );
 }
