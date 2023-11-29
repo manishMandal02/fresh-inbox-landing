@@ -10,15 +10,15 @@ export default function Page() {
   return (
     <div>
       {/* blob pattern blue */}
-      <div className='absolute w-[1200px] -right-[40%] top-[20%] rotate-[150deg]'>
+      {/* <div className='absolute w-[1200px] -right-[40%] top-[20%] rotate-[150deg]'>
         <Image
           src='/blob-pattern-blue.svg'
           alt='blob pattern blue'
           className='max-w-full h-full object-cover bg-center opacity-80 z-0'
-          width={1000}
+        width={1000}
           height={1000}
         />
-      </div>
+      </div> */}
       {/* blob pattern orange */}
       <div className='absolute w-[800px] -left-[35%] top-[50%] rotate-[30deg]'>
         <Image

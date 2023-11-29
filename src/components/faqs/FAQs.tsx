@@ -16,7 +16,7 @@ const faqs = [
       'FreshInbox is a free Chrome extension designed to streamline your Gmail experience. It provides powerful features such as unsubscribe, bulk delete, and advanced search to help you efficiently manage your inbox.',
   },
   {
-    question: 'How can FreshInbox help me declutter my inbox?',
+    question: 'How can it help me de-clutter my inbox?',
     answer:
       'FreshInbox offers a range of tools to simplify your inbox. You can easily unsubscribe from unwanted emails, bulk delete messages from specific senders, and use advanced search options to organize and manage your emails effectively.',
   },
@@ -36,24 +36,24 @@ const faqs = [
       'No, FreshInbox does not collect any personal information from users. Your privacy is crucial, and we adhere to a no-data-collection policy to ensure a completely anonymous user experience.',
   },
   {
-    question: 'Can I use FreshInbox on multiple devices?',
+    question: 'Can I use it on multiple devices?',
     answer:
       'Yes, FreshInbox is designed to work seamlessly on multiple devices. Your preferences and settings are synced with chrome sync.',
   },
   {
-    question: 'Can I use FreshInbox with multiple email accounts on the same browser?',
+    question: 'Can I use multiple email accounts on the same browser?',
     answer: 'Yes, FreshInbox supports multiple email accounts on the same browser.',
   },
   {
     question: 'How much does FreshInbox cost?',
     answer:
-      'FreshInbox is completely free to use! We believe in providing powerful inbox management tools without any cost to the user.',
+      'FreshInbox is completely free forever to use! We want everyone to have a clutter free inbox experience.',
   },
 
   {
-    question: 'What browsers does FreshInbox support?',
+    question: 'What browsers does you support?',
     answer:
-      'Currently, FreshInbox is designed specifically for the Google Chrome browser. Support for additional browsers may be considered in future updates.',
+      'Currently, FreshInbox is designed specifically for the Google Chrome browser. Support for additional browsers may be considered in future.',
   },
 ];
 
@@ -64,10 +64,10 @@ const FAQs = () => {
     return openFAQsIds.includes(id.toString());
   };
   return (
-    <div className='mt-10 flex flex-col items-center px-4 py-12'>
-      <span className='text-lg font-light text-orange-600 mb-2'>Have questions?</span>
-      <h2 className='text-3xl font-bold text-slate-700 tracking-wide mb-10'>FAQs</h2>
-      <div className='max-h-full w-[55%]'>
+    <div className='mt-10 flex flex-col items-center px-4 py-16' id='faqs'>
+      <span className='text-lg font-light text-orange-600 mb-2'>Know more</span>
+      <h2 className='text-3xl font-bold text-slate-700 tracking-wide '>Frequently Asked Questions</h2>
+      <div className='max-h-full w-[55%] mt-16'>
         <Accordion
           allowMultipleExpanded={true}
           allowZeroExpanded={true}

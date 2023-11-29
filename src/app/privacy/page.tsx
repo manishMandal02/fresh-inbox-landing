@@ -58,7 +58,7 @@ const page = () => {
       </section>
 
       <section className='mt-4'>
-        <p className='text-slate-800 font-light text-lg'>
+        <p className='text-slate-700 font-light underline leading-7'>
           By leveraging local browser operations and storage, FreshInbox maintains a privacy-centric approach,
           ensuring your data remains under your control within your browser environment. Additionally, we
           uphold the same standard of privacy on our landing page, where no user data is collected.

@@ -1,6 +1,7 @@
 'use client';
 import { scrollTo } from '@/utils/scrollTo';
 import Image from 'next/image';
+import { BsGithub } from 'react-icons/bs';
 import { FaChrome } from 'react-icons/fa';
 
 const HeaderNav = () => {
@@ -8,7 +9,7 @@ const HeaderNav = () => {
     scrollTo(menuId);
   };
   return (
-    <div className='px-32 py-6 flex justify-between items-center border-b border-slate-200/75 sticky top-0 bg-slate-50 z-[60]'>
+    <div className='px-32 py-6 flex justify-between items-center border-b border-slate-200/60 sticky top-0 bg-slate-100 z-[60]'>
       {/* logo */}
       <a href='/' className='flex items-center select-none'>
         <Image src={'/logo-128.png'} alt='logo' width={32} height={32} />
@@ -23,12 +24,7 @@ const HeaderNav = () => {
         >
           Features
         </span>
-        <span
-          className='cursor-pointer transition-all duration-200 hover:opacity-80 text-slate-700 font-light'
-          onClick={() => handleMenuClick('how-it-works')}
-        >
-          How it works
-        </span>
+
         <span
           className='cursor-pointer transition-all duration-200 hover:opacity-80 text-slate-700 font-light'
           onClick={() => handleMenuClick('testimonials')}
@@ -44,14 +40,22 @@ const HeaderNav = () => {
       </ul>
 
       {/* cta*/}
-      <a
-        href='https://chromewebstore.google.com/'
-        target='_blank'
-        className='flex items-center gap-x-1 text-slate-100 from-emerald-500 to-teal-500 bg-gradient-to-br rounded-md text-sm px-3.5 py-1.5 font-medium'
-      >
-        <FaChrome />
-        Chrome Web Store
-      </a>
+      <ul className='flex gap-x-4'>
+        <a
+          href='/link/chrome'
+          target='_blank'
+          className='flex items-center gap-x-1 text-slate-100 from-emerald-500 to-cyan-600 bg-gradient-to-br rounded-full text-sm p-2 font-medium'
+        >
+          <FaChrome />
+        </a>
+        <a
+          href='/link/github'
+          target='_blank'
+          className='flex items-center gap-x-1 text-slate-100 from-emerald-500 to-cyan-600 bg-gradient-to-br rounded-full text-sm p-2 font-medium'
+        >
+          <BsGithub />
+        </a>
+      </ul>
     </div>
   );
 };

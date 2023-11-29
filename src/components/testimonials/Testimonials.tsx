@@ -52,7 +52,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className='mt-28 flex flex-col items-center'>
+    <div className='mt-28 flex flex-col items-center' id='testimonials'>
       <span className='text-lg font-light text-green-600 mb-2'>What our users are saying?</span>
       <h2 className='text-3xl font-bold text-slate-700 tracking-wide '>Testimonials</h2>
       <div className='w-full flex items-center justify-center relative mt-16'>
@@ -75,7 +75,7 @@ const Testimonials = () => {
           {testimonials.map(testimonial => (
             <SwiperSlide
               key={testimonial.name}
-              className='mt-10 mx-10 !flex flex-col items-center justify-center rounded-md shadow-sm shadow-slate-200 bg-slate-100/90 py-4 px-6 max-h-[70%]'
+              className='mt-10 mx-10 !flex flex-col items-center justify-center rounded-md shadow-sm shadow-slate-200 bg-slate-50/90 py-4 px-6 max-h-[70%]'
             >
               <Image
                 src={testimonial.image}
@@ -87,7 +87,7 @@ const Testimonials = () => {
               <span className='text-center font-extralight text-xs text-slate-500 mt-1'>
                 {testimonial.designation}
               </span>
-              <p className='text-sm font-light text-center text-slate-500 mt-3 '>{testimonial.testimonial}</p>
+              <p className='text-sm font-light text-center text-slate-600 mt-3 '>{testimonial.testimonial}</p>
             </SwiperSlide>
           ))}
         </Swiper>

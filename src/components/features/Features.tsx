@@ -30,33 +30,35 @@ const features = [
 
 const Features = () => {
   return (
-    <div className='w-full flex items-center flex-col mt-40'>
+    <div className='w-full flex items-center flex-col mt-40' id='features'>
       <span className='tracking-wide font-light text-lg mb-1 text-sky-600'>What can it do</span>
       <span className='text-3xl font-bold text-slate-700 text-center'>Know the Features</span>
-      <div className='w-full flex px-20 py-8 gap-4 mt-16'>
+      <div className='w-full flex flex-wrap px-20 py-8 mt-6 items-center justify-center ml-20'>
         {features.map(feature => (
-          <div className='flex flex-col items-center w-[25%] ' key={feature.title}>
+          <div className='flex items-center w-[40%] px-10 mt-10' key={feature.title}>
             <feature.Icon
-              className={`scale-[3] fill-white  px-.5 py-0.5 rounded-full  
+              className={` fill-white scale-[6] h-fit p-[1.5px] -ml-6 -mt-6 rounded-full  
               ${
                 feature.color === 'red'
-                  ? `bg-red-600`
+                  ? `bg-red-600 scale-[5] -mt-4`
                   : feature.color === 'black'
                   ? `bg-slate-800`
                   : feature.color === 'blue'
-                  ? `bg-cyan-500`
-                  : `bg-brand-primary`
+                  ? `bg-cyan-500 scale-[5] -mt-4`
+                  : `bg-brand-primary scale-[6.5]`
               }
               
               `}
               style={{
-                boxShadow: ' rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
+                boxShadow: ' rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
               }}
             />
-            <span className='text-slate-600 font-medium text-lg mt-6'>{feature.title}</span>
-            <span className='flex-wrap font-light text-slate-600 text-center mt-1 text-sm px-2.5'>
-              {feature.desc}
-            </span>
+            <div className='ml-12 flex flex-col items-start justify-start'>
+              <span className='text-slate-600 font-medium text-lg'>{feature.title}</span>
+              <span className='flex-wrap font-light text-slate-600 mt-px text-sm w-[85%]'>
+                {feature.desc}
+              </span>
+            </div>
           </div>
         ))}
       </div>
