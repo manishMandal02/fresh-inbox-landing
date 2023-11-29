@@ -30,9 +30,9 @@ const features = [
 
 const Features = () => {
   return (
-    <div className='w-full flex items-center flex-col mt-24'>
-      <span className='tracking-wide font-light text-lg text-sky-600'>What can it do</span>
-      <span className='text-2xl font-bold text-slate-800 text-center'>Know the Features</span>
+    <div className='w-full flex items-center flex-col mt-40'>
+      <span className='tracking-wide font-light text-xl mb-1 text-sky-600'>What can it do</span>
+      <span className='text-3xl font-bold text-slate-700 text-center'>Know the Features</span>
       <div className='w-full flex px-20 py-8 gap-4 mt-8'>
         {features.map(feature => (
           <div className='flex flex-col items-center w-[25%] ' key={feature.title}>

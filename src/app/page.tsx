@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <div className=''>
+    <div>
       {/* blob pattern blue */}
       <div className='absolute w-[1200px] -right-[40%] top-[20%] rotate-[150deg]'>
         <Image
