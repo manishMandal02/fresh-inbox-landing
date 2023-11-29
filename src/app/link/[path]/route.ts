@@ -7,7 +7,7 @@ const redirects: Record<string, string> = {
 };
 
 export const GET = (request: NextRequest) => {
-  const urlPath = request.nextUrl.pathname.split('/')[1];
+  const urlPath = request.nextUrl.pathname.split('/')[2];
 
   console.log('🚀 ~ file: route.ts:13 ~ GET ~ urlPath:', urlPath);
 

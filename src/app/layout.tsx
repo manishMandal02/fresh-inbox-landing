@@ -19,9 +19,9 @@ const poppins = Poppins({
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang='en'>
-      <body className={`${poppins.className} overflow-x-hidden overflow-y-auto relative`}>
+      <body className={`${poppins.className} overflow-x-hidden overflow-y-auto relative h-screen`}>
         <HeaderNav />
-        <div className='bg-slate-100/70'>{children}</div>
+        <div className='bg-slate-100/70 '>{children}</div>
         <Footer />
       </body>
     </html>

@@ -5,11 +5,11 @@ import { BsTwitterX, BsLinkedin, BsGithub, BsGlobe } from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <div className='px-16 py-6 bg-slate-100 flex items-center justify-between border-t border-slate-200/50 w-full relative'>
+    <div className='px-16 h-[10%] bg-slate-100 flex items-center justify-between border-t border-slate-200/50 w-full relative'>
       <ul className='flex items-center select-none'>
         <Image src={'/logo-128.png'} alt='logo' width={22} height={16} className='grayscale' />
         <span className='text-slate-500 ml-1 '>Fresh Inbox</span>
-    </ul>
+      </ul>
       <ul className='flex items-center gap-x-4 ml-16'>
         <a
           href='/privacy'
