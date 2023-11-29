@@ -1,21 +1,46 @@
+'use client';
+import { scrollTo } from '@/utils/scrollTo';
 import Image from 'next/image';
 import { FaChrome } from 'react-icons/fa';
 
 const HeaderNav = () => {
+  const handleMenuClick = (menuId: string) => {
+    scrollTo(menuId);
+  };
   return (
     <div className='px-32 py-6 flex justify-between items-center border-b border-slate-200/75 sticky top-0 bg-slate-50 z-[60]'>
       {/* logo */}
-      <a href='/' className='flex items-center'>
+      <a href='/' className='flex items-center select-none'>
         <Image src={'/logo-128.png'} alt='logo' width={32} height={32} />
-        <span className='text-slate-700 font-semibold ml-1 text-lg'>Fresh Inbox</span>
+        <span className='text-slate-600 font-medium ml-1 text-xl'>Fresh Inbox</span>
       </a>
 
       {/* menu */}
       <ul className='flex gap-x-6'>
-        <span className='cursor-pointer transition-all duration-200 hover:opacity-80'>Features</span>
-        <span className='cursor-pointer transition-all duration-200 hover:opacity-80'>How it works</span>
-        <span className='cursor-pointer transition-all duration-200 hover:opacity-80'>Testimonials</span>
-        <span className='cursor-pointer transition-all duration-200 hover:opacity-80'>Faqs</span>
+        <span
+          className='cursor-pointer transition-all duration-200 hover:opacity-80 text-slate-700 font-light'
+          onClick={() => handleMenuClick('features')}
+        >
+          Features
+        </span>
+        <span
+          className='cursor-pointer transition-all duration-200 hover:opacity-80 text-slate-700 font-light'
+          onClick={() => handleMenuClick('how-it-works')}
+        >
+          How it works
+        </span>
+        <span
+          className='cursor-pointer transition-all duration-200 hover:opacity-80 text-slate-700 font-light'
+          onClick={() => handleMenuClick('testimonials')}
+        >
+          Testimonials
+        </span>
+        <span
+          className='cursor-pointer transition-all duration-200 hover:opacity-80 text-slate-700 font-light'
+          onClick={() => handleMenuClick('faqs')}
+        >
+          Faqs
+        </span>
       </ul>
 
       {/* cta*/}

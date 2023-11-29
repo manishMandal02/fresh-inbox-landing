@@ -1,13 +1,13 @@
 const page = () => {
   return (
     <main className='px-56 py-16'>
-      <h1 className='text-center text-4xl tracking-wide text-slate-800'>Privacy Policy</h1>
-      <p className=' text-slate-500 text-sm text-center w-full -ml-1 mt-2'>Last updated: on Nov 28, 2023</p>
+      <h1 className='text-center font-medium text-4xl tracking-wide text-slate-800'>Privacy Policy</h1>
+      <p className=' text-slate-500 text-sm text-center w-full -ml-1 mt-3'>Last updated: on Nov 28, 2023</p>
 
       <hr className='bg-slate-200 w-[60%] mx-auto  h-[1.5px] my-6' />
 
       <section className='mt-5'>
-        <h2 className='text-4xl mb-2 font-light text-slate-700 '>Information Collection</h2>
+        <h2 className='text-3xl mb-3 font-normal text-slate-600 '>Information Collection</h2>
         <p className='text-slate-700 font-light'>
           <strong className='text-slate-700 font-medium text-lg '>Local Browser Operations:</strong>{' '}
           FreshInbox exclusively operates within your browser, conducting all operations locally without
@@ -17,8 +17,8 @@ const page = () => {
         </p>
       </section>
 
-      <section className='mt-8'>
-        <h2 className='text-4xl mb-2 font-light text-slate-700 '>Usage of FreshInbox</h2>
+      <section className='mt-10'>
+        <h2 className='text-3xl mb-3 font-normal text-slate-600 '>Usage of FreshInbox</h2>
         <p className='text-slate-700 font-light'>
           <strong className='text-slate-700 font-medium text-lg '>Local Browser Storage:</strong> To enhance
           your experience, FreshInbox utilizes local browser storage mechanisms to save preferences and
@@ -27,8 +27,8 @@ const page = () => {
         </p>
       </section>
 
-      <section className='mt-8'>
-        <h2 className='text-4xl mb-2 font-light text-slate-700 '>Data Security</h2>
+      <section className='mt-10'>
+        <h2 className='text-3xl mb-3 font-normal text-slate-600 '>Data Security</h2>
         <p className='text-slate-700 font-light'>
           <strong className='text-slate-700 font-medium text-lg '>Zero External Storage:</strong> FreshInbox
           adheres to a zero-external-storage policy. Your personal information and email data are not stored
@@ -37,8 +37,8 @@ const page = () => {
         </p>
       </section>
 
-      <section className='mt-8'>
-        <h2 className='text-4xl mb-2 font-light text-slate-700 '>Your Privacy Matters</h2>
+      <section className='mt-10'>
+        <h2 className='text-3xl mb-3 font-normal text-slate-600 '>Your Privacy Matters</h2>
         <p className='text-slate-700 font-light'>
           <strong className='text-slate-700 font-medium text-lg '>Localized User Experience:</strong>{' '}
           FreshInbox prioritizes user privacy by minimizing data transfer and storage. Your interaction with
@@ -47,8 +47,8 @@ const page = () => {
         </p>
       </section>
 
-      <section className='mt-8'>
-        <h2 className='text-4xl mb-2 font-light text-slate-700 '>Landing Page Data Collection</h2>
+      <section className='mt-10'>
+        <h2 className='text-3xl mb-3 font-normal text-slate-600 '>Landing Page Data Collection</h2>
         <p className='text-slate-700 font-light'>
           <strong className='text-slate-700 font-medium text-lg '>No Data Collected:</strong> Our commitment
           to user privacy extends to our landing page. We do not collect any data from visitors to our

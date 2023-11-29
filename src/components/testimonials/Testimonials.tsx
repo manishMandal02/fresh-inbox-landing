@@ -52,10 +52,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className='mt-20 flex flex-col items-center'>
-      <span className='text-lg font-light text-green-600 mb-1.5'>What our users are saying?</span>
-      <h2 className='text-3xl font-bold text-slate-700 tracking-wide mb-10'>Testimonials</h2>
-      <div className='w-full flex items-center justify-center relative'>
+    <div className='mt-28 flex flex-col items-center'>
+      <span className='text-lg font-light text-green-600 mb-2'>What our users are saying?</span>
+      <h2 className='text-3xl font-bold text-slate-700 tracking-wide '>Testimonials</h2>
+      <div className='w-full flex items-center justify-center relative mt-16'>
         <Swiper
           className={`bg-gray-100 h-80 relative 
           [&>div:nth-child(4)]:absolute [&>div:nth-child(4)]:bottom-1
