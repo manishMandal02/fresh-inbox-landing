@@ -9,7 +9,7 @@ const HeaderNav = () => {
     scrollTo(menuId);
   };
   return (
-    <div className='px-32  flex justify-between items-center border-b border-slate-200/60 sticky top-0 bg-slate-100 z-[60] h-[10%]'>
+    <div className='px-32  flex justify-between items-center border-b border-slate-200/60 sticky top-0 bg-slate-50 z-[60] h-[10%]'>
       {/* logo */}
       <a href='/' className='flex items-center select-none'>
         <Image src={'/logo-128.png'} alt='logo' width={32} height={32} />

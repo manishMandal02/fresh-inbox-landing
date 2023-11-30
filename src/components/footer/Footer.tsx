@@ -52,7 +52,7 @@ const Footer = () => {
         <a target='_blank' href='https://github.com/manishMandal02' className='scale-110'>
           <BsGithub />
         </a>
-        <a target='_blank' href='https://manishmandal.me' className=' scale-105 opacity-60'>
+        <a target='_blank' href='https://manishmandal.me' className=' scale-105 opacity-60 -ml-px'>
           <BsGlobe />
         </a>
       </ul>

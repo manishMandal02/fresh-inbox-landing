@@ -1,34 +1,17 @@
 'use client';
 import FAQs from '@/components/faqs';
 import Features from '@/components/features';
-import HeaderNav from '@/components/header-nav';
 import HeroSection from '@/components/hero-section';
+import SvgBlob from '@/components/hero-section/svg-blob';
 import Testimonials from '@/components/testimonials';
-import Image from 'next/image';
 
 export default function Page() {
   return (
     <div>
-      {/* blob pattern blue */}
-      {/* <div className='absolute w-[1200px] -right-[40%] top-[20%] rotate-[150deg]'>
-        <Image
-          src='/blob-pattern-blue.svg'
-          alt='blob pattern blue'
-          className='max-w-full h-full object-cover bg-center opacity-80 z-0'
-        width={1000}
-          height={1000}
-        />
-      </div> */}
-      {/* blob pattern orange */}
-      <div className='absolute w-[800px] -left-[35%] top-[50%] rotate-[30deg]'>
-        <Image
-          src='/blob-pattern-orange.svg'
-          alt='blob pattern blue'
-          className='max-w-full h-full object-cover bg-center opacity-80 z-0'
-          width={1000}
-          height={1000}
-        />
-      </div>
+      {/* blob patterns*/}
+      <SvgBlob color='blue' width={1000} pos={{ left: -35, top: 50, rotate: 22 }} />
+      <SvgBlob color='orange' width={1000} pos={{ right: -32, top: 60, rotate: -150 }} />
+
       <HeroSection />
       <Features />
       <Testimonials />

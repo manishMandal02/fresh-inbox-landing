@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// route runtime
+export const runtime = 'edge';
+
 const redirects: Record<string, string> = {
   chrome: 'https://chromewebstore.google.com/',
   github: 'https://github.com/manishMandal02/fresh-inbox-extension',
@@ -9,8 +12,6 @@ const redirects: Record<string, string> = {
 export const GET = (request: NextRequest) => {
   const urlPath = request.nextUrl.pathname.split('/')[2];
 
-  console.log('🚀 ~ file: route.ts:13 ~ GET ~ urlPath:', urlPath);
-
   //
   let redirectUrl = 'https://freshinbox.xyz';
 
@@ -18,6 +19,5 @@ export const GET = (request: NextRequest) => {
     redirectUrl = redirects[urlPath];
   }
 
-  console.log('🚀 ~ file: route.ts:19 ~ GET ~ redirectUrl:', redirectUrl);
   return NextResponse.redirect(redirectUrl);
 };

@@ -1,4 +1,4 @@
-const NotFoundPage = () => {
+const NotFound = () => {
   return (
     <div className='text-4xl font-extralight flex items-center justify-center w-full h-[80vh]  text-slate-500'>
       404 | Page not Found
@@ -6,4 +6,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default NotFound;
