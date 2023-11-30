@@ -9,8 +9,8 @@ export default function Page() {
   return (
     <div>
       {/* blob patterns*/}
-      <SvgBlob color='blue' width={1000} pos={{ left: -35, top: 50, rotate: 22 }} />
-      <SvgBlob color='orange' width={1000} pos={{ right: -32, top: 60, rotate: -150 }} />
+      <SvgBlob color='blue' width={1000} />
+      <SvgBlob color='orange' width={1000} />
 
       <HeroSection />
       <Features />

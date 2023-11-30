@@ -3,20 +3,18 @@ import Image from 'next/image';
 type Props = {
   width: number;
   color: 'blue' | 'orange';
-  pos: { left?: number; right?: number; top: number; rotate: number };
 };
 
-const SVGBlob = ({ width, color, pos }: Props) => {
+const SVGBlob = ({ width, color }: Props) => {
   return (
     <div>
       <div
-        className={`absolute`}
-        style={{
-          top: `${pos.top}%`,
-          rotate: `${pos.rotate}deg`,
-
-          ...(pos.left ? { left: `${pos.left}%` } : { right: `${pos.right}%` }),
-        }}
+        className={`absolute ${
+          color === 'blue'
+            ? '2xl:top-[50%] top-[60%] 2xl:-left-[35%] -left-[45%] rotate-[22deg]'
+            : '2xl:top-[60%] top-[68%] 2xl:-right-[32%] -right-[45%] -rotate-[150deg]'
+        }`}
+        style={{}}
       >
         <Image
           src={`/blob-pattern-${color}.svg`}

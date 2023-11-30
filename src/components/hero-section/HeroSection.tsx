@@ -6,7 +6,7 @@ import ModalVideoPlayer from './video-player/ModalVideoPlayer';
 const HeroSection = () => {
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
   return (
-    <div className='px-20 py-20 flex items-center justify-around '>
+    <div className='px-20 py-20 flex items-center justify-around'>
       {/* left container */}
       <div className='mt-8'>
         {/* title */}
@@ -40,7 +40,7 @@ const HeroSection = () => {
         {/* cta */}
         <div className='mt-8 '>
           <a
-            href='https://chromewebstore.google.com/'
+            href='https://chromewebstore.google.com'
             target='_blank'
             className='w-52 flex gap-x-2 items-center justify-center font-medium  from-teal-600 to-emerald-500 bg-gradient-to-br text-slate-50 px-4 py-2 rounded-md transition-all duration-300 hover:opacity-90'
           >
@@ -54,12 +54,11 @@ const HeroSection = () => {
       {/* left container */}
 
       {/* demo video */}
-      <div className='relative select-none mt-8 -mr-10 rounded-md z-20 '>
+      <div className='relative select-none mt-8 -mr-16 rounded-md z-20 2xl:w-[600px] w-[500px] 2xl:h-[330px] h-[300px] '>
         <Image
           src={'/demo-thumbnail.webp'}
           alt='hero-video'
-          width={650}
-          height={500}
+          layout='fill'
           className=' bg-slate-100 rounded-md'
           loading='eager'
           style={{
@@ -71,7 +70,7 @@ const HeroSection = () => {
           className='absolute w-full h-full bg-slate-200 opacity-10 top-0 left-0 rounded-md transition-all peer duration-300 hover:opacity-10 cursor-pointer '
           onClick={() => setIsPlayerOpen(true)}
         ></div>
-        <FaPlay className='scale-[3.2] absolute top-1/2 left-1/2 z-20  text-emerald-500/80 cursor-pointer transition-all duration-300 peer-hover:text-emerald-500/90 peer-hover:scale-[3.2]' />
+        <FaPlay className='scale-[3.2] absolute top-1/2 left-1/2 z-20  text-emerald-500/80 cursor-pointer transition-all duration-300 peer-hover:text-emerald-500/90 peer-hover:scale-[3.5]' />
       </div>
       <ModalVideoPlayer isOpen={isPlayerOpen} onClose={() => setIsPlayerOpen(false)} />
     </div>
