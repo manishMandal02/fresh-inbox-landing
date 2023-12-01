@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className='px-16 h-[10%] bg-slate-100 flex items-center justify-between border-t border-slate-200/50 w-full relative'>
       <ul className='flex items-center select-none'>
-        <Image src={'/logo-128.png'} alt='logo' width={22} height={16} className='grayscale' />
+        <Image src={'/images/logo-128.png'} alt='logo' width={22} height={16} className='grayscale' />
         <span className='text-slate-500 ml-1 '>Fresh Inbox</span>
       </ul>
       <ul className='flex items-center gap-x-4 ml-16'>
@@ -18,13 +18,13 @@ const Footer = () => {
           Privacy
         </a>
         <a
-          href='/privacy'
+          href='/github'
           className='text-slate-600 font-light text-sm transition-all duration-300 hover:underline'
         >
           Open Source
         </a>
         <a
-          href='/privacy'
+          href='/chrome'
           className='text-slate-600 font-light text-sm transition-all duration-300 hover:underline'
         >
           Chrome Web Store

@@ -12,7 +12,7 @@ const HeaderNav = () => {
     <div className='px-32  flex justify-between items-center border-b border-slate-200/60 sticky top-0 bg-slate-50 z-[60] h-[10%]'>
       {/* logo */}
       <a href='/' className='flex items-center select-none'>
-        <Image src={'/logo-128.png'} alt='logo' width={32} height={32} />
+        <Image src={'/images/logo-128.png'} alt='logo' width={32} height={32} />
         <span className='text-slate-600 font-medium ml-1 text-xl'>Fresh Inbox</span>
       </a>
 

@@ -56,10 +56,10 @@ const HeroSection = () => {
       {/* demo video */}
       <div className='relative select-none mt-8 -mr-16 rounded-md z-20 2xl:w-[600px] w-[500px] 2xl:h-[330px] h-[300px] '>
         <Image
-          src={'/demo-thumbnail.webp'}
+          src={'/images/demo-thumbnail.webp'}
           alt='hero-video'
-          layout='fill'
           className=' bg-slate-100 rounded-md'
+          fill
           loading='eager'
           style={{
             boxShadow: ' rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
