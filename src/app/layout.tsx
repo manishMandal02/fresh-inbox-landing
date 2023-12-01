@@ -10,7 +10,7 @@ const seoData = {
   url: 'https://freshinbox.xyz/',
   title: 'Clean Inbox, Total Privacy | FreshInbox',
   desc: 'Fresh Inbox is a Chrome extension to help you maintain a clutter-free Gmail inbox. it removes & blocks unwanted emails.',
-  ogImage: 'https://freshinbox.xyz/images/og-image.png',
+  ogImage: 'https://freshinbox.xyz/images/og-image.jpg',
 };
 
 export const metadata: Metadata = {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     description: seoData.desc,
     images: {
       url: seoData.ogImage,
-      width: 1650,
-      height: 850,
+      width: 1200,
+      height: 630,
       alt: seoData.title,
     },
   },
