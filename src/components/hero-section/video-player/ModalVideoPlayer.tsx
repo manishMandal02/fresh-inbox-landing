@@ -16,7 +16,7 @@ const ModalVideoPlayer = ({ isOpen, onClose }: Props) => {
           //@ts-ignore
           color: 'white',
         }}
-        videoId='lqXWVzWkkyc'
+        videoId='k5nk9IwdZ2k'
         isOpen={isOpen}
         onClose={onClose}
       />

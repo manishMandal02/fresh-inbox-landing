@@ -56,7 +56,7 @@ const HeroSection = () => {
       {/* demo video */}
       <div className='relative select-none mt-8 -mr-16 rounded-md z-20 2xl:w-[600px] w-[500px] 2xl:h-[330px] h-[300px] '>
         <Image
-          src={'/images/demo-thumbnail.webp'}
+          src={'/images/demo-thumbnail-1.webp'}
           alt='hero-video'
           className=' bg-slate-100 rounded-md'
           fill
@@ -67,7 +67,7 @@ const HeroSection = () => {
         />
 
         <div
-          className='absolute w-full h-full bg-slate-200 opacity-10 top-0 left-0 rounded-md transition-all peer duration-300 hover:opacity-10 cursor-pointer '
+          className='absolute w-full h-full bg-slate-400 opacity-10 top-0 left-0 rounded-md transition-all peer duration-300 hover:opacity-10 cursor-pointer '
           onClick={() => setIsPlayerOpen(true)}
         ></div>
         <FaPlay className='scale-[3.2] absolute top-1/2 left-1/2 z-20  text-emerald-500/80 cursor-pointer transition-all duration-300 peer-hover:text-emerald-500/90 peer-hover:scale-[3.5]' />
