@@ -4,7 +4,8 @@ import { NextRequest, NextResponse } from 'next/server';
 export const runtime = 'edge';
 
 const redirects: Record<string, string> = {
-  chrome: 'https://chromewebstore.google.com/',
+  // chrome: 'https://chromewebstore.google.com/',
+  chrome: 'https://drive.google.com/drive/folders/1X-6MVUPjccWOuRhwsapgBF8A_pJSZsEg?usp=sharing',
   github: 'https://github.com/manishMandal02/fresh-inbox-extension',
   demo: 'https://youtube.com',
 };
