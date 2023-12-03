@@ -40,7 +40,7 @@ const HeroSection = () => {
         {/* cta */}
         <div className='mt-8 '>
           <a
-            href='https://chromewebstore.google.com'
+            href='/'
             target='_blank'
             className='w-52 flex gap-x-2 items-center justify-center font-medium  from-teal-600 to-emerald-500 bg-gradient-to-br text-slate-50 px-4 py-2 rounded-md transition-all duration-300 hover:opacity-90'
           >
@@ -54,9 +54,9 @@ const HeroSection = () => {
       {/* left container */}
 
       {/* demo video */}
-      <div className='relative select-none mt-8 -mr-16 rounded-md z-20 2xl:w-[600px] w-[500px] 2xl:h-[330px] h-[300px] '>
+      <div className='relative select-none mt-8 -mr-16 rounded-md z-20 2xl:w-[600px] w-[520px] 2xl:h-[340px] h-[300px] '>
         <Image
-          src={'/images/demo-thumbnail-1.webp'}
+          src={'/images/demo-thumbnail.jpg'}
           alt='hero-video'
           className=' bg-slate-100 rounded-md'
           fill

@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { FaQuoteLeft } from 'react-icons/fa';
+
 import SwiperCore from 'swiper';
 // import function to register Swiper custom elements
 import { Pagination, Autoplay, A11y } from 'swiper/modules';
@@ -16,37 +18,37 @@ const testimonials = [
   {
     image: 'https://avatars.githubusercontent.com/u/76472450?v=4',
     name: 'Manish Mandal',
-    designation: 'Software Engineer',
+    designation: 'Web Developer',
     testimonial:
-      "Fresh Inbox's privacy focused features are great ways to keep your inbox clean with while also keeping your data secure.",
+      "Fresh Inbox's privacy focused features are great ways to keep your inbox clean while also keeping your data secure.",
+  },
+  {
+    image: 'https://avatars.githubusercontent.com/u/77614770?v=4',
+    name: 'Pankaj Kumar',
+    designation: 'Mobile App Developer',
+    testimonial:
+      "Fresh Inbox's helped me clean by Inbox by deleting 1000s of emails. It's Advance search feature allowed me to find emails & then bulk delete all of them in one click.",
   },
   {
     image: 'https://avatars.githubusercontent.com/u/76472450?v=4',
     name: 'Manish Mandal',
-    designation: 'Software Engineer',
+    designation: 'Web Developer',
     testimonial:
-      "Fresh Inbox's privacy focused features are great ways to keep your inbox clean with while also keeping your data secure.",
+      "Fresh Inbox's privacy focused features are great ways to keep your inbox clean while also keeping your data secure.",
+  },
+  {
+    image: 'https://avatars.githubusercontent.com/u/77614770?v=4',
+    name: 'Pankaj Kumar',
+    designation: 'Mobile App Developer',
+    testimonial:
+      "Fresh Inbox's helped me clean by Inbox by deleting 1000s of emails. It's Advance search feature allowed me to find emails & then bulk delete all of them in one click.",
   },
   {
     image: 'https://avatars.githubusercontent.com/u/76472450?v=4',
     name: 'Manish Mandal',
-    designation: 'Software Engineer',
+    designation: 'Web Developer',
     testimonial:
-      "Fresh Inbox's privacy focused features are great ways to keep your inbox clean with while also keeping your data secure.",
-  },
-  {
-    image: 'https://avatars.githubusercontent.com/u/76472450?v=4',
-    name: 'Manish Mandal',
-    designation: 'Software Engineer',
-    testimonial:
-      "Fresh Inbox's privacy focused features are great ways to keep your inbox clean with while also keeping your data secure.",
-  },
-  {
-    image: 'https://avatars.githubusercontent.com/u/76472450?v=4',
-    name: 'Manish Mandal',
-    designation: 'Software Engineer',
-    testimonial:
-      "Fresh Inbox's privacy focused features are great ways to keep your inbox clean with while also keeping your data secure.",
+      "Fresh Inbox's privacy focused features are great ways to keep your inbox clean while also keeping your data secure.",
   },
 ];
 
@@ -57,11 +59,11 @@ const Testimonials = () => {
       <h2 className='text-3xl font-bold text-slate-700 tracking-wide '>Testimonials</h2>
       <div className='w-full flex items-center justify-center relative mt-16'>
         <Swiper
-          className={`bg-gray-100 h-80 relative 
+          className={`bg-gray-100 h-[22rem] relative 
           [&>div:nth-child(4)]:absolute [&>div:nth-child(4)]:bottom-1
           svg-background
           `}
-          slidesPerView={4}
+          slidesPerView={3}
           autoplay={{
             delay: 3500,
           }}
@@ -75,8 +77,9 @@ const Testimonials = () => {
           {testimonials.map(testimonial => (
             <SwiperSlide
               key={testimonial.name}
-              className='mt-10 mx-10 !flex flex-col items-center justify-center rounded-md shadow-sm shadow-slate-200 bg-slate-50/90 py-4 px-6 max-h-[70%]'
+              className='mt-8 mx-10 !flex flex-col items-center justify-center relative rounded shadow-sm shadow-slate-200 bg-slate-50/95 py-3 px-12 max-h-[75%] overflow-hidden'
             >
+              <FaQuoteLeft className='absolute -top-4 left-2 text-slate-200/20 text-8xl ' />
               <Image
                 src={testimonial.image}
                 alt={testimonial.name}
@@ -84,10 +87,12 @@ const Testimonials = () => {
                 height={50}
                 className='rounded-full border border-slate-300'
               />
-              <span className='text-center font-extralight text-xs text-slate-500 mt-1'>
+              <span className='text-center font-extralight text-xs text-slate-500 mt-3'>
                 {testimonial.designation}
               </span>
-              <p className='text-sm font-light text-center text-slate-600 mt-3 '>{testimonial.testimonial}</p>
+              <p className=' font-light text-center text-slate-500 mt-3  leading-6 '>
+                {testimonial.testimonial}
+              </p>
             </SwiperSlide>
           ))}
         </Swiper>

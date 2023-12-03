@@ -6,6 +6,8 @@ type Props = {
   onClose: () => void;
 };
 
+const VIDEO_ID = '5FUqJ52HxRw';
+
 const ModalVideoPlayer = ({ isOpen, onClose }: Props) => {
   return (
     <div className=''>
@@ -16,7 +18,7 @@ const ModalVideoPlayer = ({ isOpen, onClose }: Props) => {
           //@ts-ignore
           color: 'white',
         }}
-        videoId='k5nk9IwdZ2k'
+        videoId={VIDEO_ID}
         isOpen={isOpen}
         onClose={onClose}
       />

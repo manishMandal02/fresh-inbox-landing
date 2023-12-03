@@ -33,7 +33,7 @@ const faqs = [
   {
     question: 'Does FreshInbox collect any of my personal information?',
     answer:
-      'No, FreshInbox does not collect any personal information from users. Your privacy is crucial, and we adhere to a no-data-collection policy to ensure a completely anonymous user experience.',
+      'No, FreshInbox does not collect any information from users.\nYour privacy is crucial, and we adhere to a no-data-collection policy to ensure a completely anonymous user experience.',
   },
   {
     question: 'Can I use it on multiple devices?',
@@ -54,6 +54,16 @@ const faqs = [
     question: 'What browsers does you support?',
     answer:
       'Currently, FreshInbox is designed specifically for the Google Chrome browser. Support for additional browsers may be considered in future.',
+  },
+  {
+    question: 'How can I reset the emails unsubscribed and whitelisted by FreshInbox?',
+    answer:
+      'Resetting unsubscribed and whitelisted emails is simple. Follow these  steps:\n1. Go to your Gmail settings by clicking on the gear icon and selecting "See all settings."\n2. Navigate to the "Filters and Blocked Addresses" tab.\n3. Look for filters created by FreshInbox with email addresses ending in "@freshinbox.xyz".\n4. Delete these filters to reset your unsubscribed and whitelisted emails.',
+  },
+  {
+    question: 'Can I recover emails deleted by FreshInbox?',
+    answer:
+      "Deleted emails are moved to the Trash by FreshInbox, aligning with Gmail's default behavior. Gmail retains items in the Trash for 30 days, allowing you a window of 30 days to restore any accidentally deleted emails.\nAfter this period, the emails are permanently deleted by Gmail.",
   },
 ];
 
@@ -97,7 +107,9 @@ const FAQs = () => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className='pl-8 pr-12 pb-4 transition-all duration-500 ease-in-out'>
-                <span className='text-sm tracking-wide leading-[.5rem] text-slate-500'>{faq.answer}</span>
+                <span className='text-sm tracking-wide leading-[.5rem] text-slate-500 whitespace-pre-wrap'>
+                  {faq.answer}
+                </span>
               </AccordionItemPanel>
             </AccordionItem>
           ))}
