@@ -40,7 +40,7 @@ const HeroSection = () => {
         {/* cta */}
         <div className='mt-8 '>
           <a
-            href='/'
+            href='/link/chrome'
             target='_blank'
             className='w-52 flex gap-x-2 items-center justify-center font-medium  from-teal-600 to-emerald-500 bg-gradient-to-br text-slate-50 px-4 py-2 rounded-md transition-all duration-300 hover:opacity-90'
           >
