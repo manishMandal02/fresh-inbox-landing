@@ -36,7 +36,10 @@ const page = () => {
             on any external servers. The extension&apos;s design ensures that all operations, including the
             handling of browser storage, occur locally on your device.
           </p>
-          <p className='text-slate-800 mt-2'>
+          <p className='text-slate-700 mt-1.5  font-light'>
+            FreshInbox will not share any data with the third party AI Models.
+          </p>
+          <p className='text-slate-700 mt-1.5 font-light'>
             FreshInbox&apos;s use and transfer of information received from Google APIs to any other app will
             adhere to {'  '}
             <a

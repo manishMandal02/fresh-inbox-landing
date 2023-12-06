@@ -1,3 +1,3 @@
-import Features from './Features';
+export * from './Features';
 
-export default Features;
+export { default } from './Features';
