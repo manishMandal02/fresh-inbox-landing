@@ -36,7 +36,7 @@ const Footer = () => {
           by{' '}
           <a
             target='_blank'
-            href='https://manishmandal.me'
+            href='https://manishmandal.com'
             className='transition-all duration-300 hover:underline'
           >
             Manish Mandal
@@ -52,7 +52,7 @@ const Footer = () => {
         <a target='_blank' href='https://github.com/manishMandal02' className='scale-110'>
           <BsGithub />
         </a>
-        <a target='_blank' href='https://manishmandal.me' className=' scale-105 opacity-60 -ml-px'>
+        <a target='_blank' href='https://manishmandal.com' className=' scale-105 opacity-60 -ml-px'>
           <BsGlobe />
         </a>
       </ul>

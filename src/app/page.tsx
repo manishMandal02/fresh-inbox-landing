@@ -1,12 +1,11 @@
 'use client';
 import FAQs from '@/components/faqs';
-import Features, { testFeat } from '@/components/features';
+import Features from '@/components/features';
 import HeroSection from '@/components/hero-section';
 import SvgBlob from '@/components/hero-section/svg-blob';
 import Testimonials from '@/components/testimonials';
 
 export default function Page() {
-  testFeat
   return (
     <div>
       {/* blob patterns*/}

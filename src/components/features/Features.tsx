@@ -1,8 +1,6 @@
 import React from 'react';
 import { MdBlock, MdDelete, MdSearch, MdSecurity } from 'react-icons/md';
 
-export const testFeat = '';
-
 const features = [
   {
     title: 'Unsubscribe',
